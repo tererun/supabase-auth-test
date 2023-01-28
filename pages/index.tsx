@@ -12,7 +12,7 @@ export default function Home() {
                 supabaseClient={supabaseClient}
                 providers={['discord']}
                 socialLayout="horizontal"
-                redirectTo={"https://supabase-auth-test-zmn1.vercel.app/"}
+                redirectTo={"https://supabase-auth-test-zmn1.vercel.app"}
             />
         </>
     )

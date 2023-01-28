@@ -37,6 +37,9 @@ const LoginButton = () => {
     const login = async () => {
         await supabaseClient.auth.signInWithOAuth({
             provider: "discord",
+            options: {
+                redirectTo: 'https://supabase-auth-test-zmn1.vercel.app'
+            }
         });
     };
 
