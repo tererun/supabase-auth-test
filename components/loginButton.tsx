@@ -47,6 +47,7 @@ const LoginButton = () => {
 
     return (
         <div className={"ml-12"}>
+            {isLoading ? <div>Loading...</div> : <></>}
             {user ? (
                 <>
                     <img src={user.user_metadata.avatar_url} className={"rounded-full h-12"}/>
